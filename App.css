@@ -1,0 +1,405 @@
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 !important;
+    width: 100vw;
+    
+    height: 100%;
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Lato', sans-serif;*/
+    /*font-family: 'Oswald', sans-serif;*/
+}
+
+.contactUsHeader {
+    z-index:3;
+    width: 100vw;
+    height: 3vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    border-bottom: rgba(0,0,0,0.05);
+}
+
+.contactUsHeaderContent {
+    font-family: 'Lato', sans-serif;
+    line-height: 25px;
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    color: #330000;
+}
+-webkit-scrollbar {
+    width: 1em;
+}
+
+-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+h1 {
+    font-family: 'Lato', sans-serif;
+    margin:0;
+    font-size:3em;
+    margin-bottom:5px;
+    
+
+}
+
+.mail:hover {
+    color: #660000;
+    cursor: pointer;
+}
+
+.contactUsHeaderFontAwesome i {
+    padding: 0 4px;
+    
+    cursor:pointer;
+}
+i:hover {
+    color: #660000;
+}
+
+.navbar {
+    z-index:3;
+    position: fixed;
+    justify-content: space-around;
+    top: 3%;
+    width: 100%;
+    height: 7%;
+    background-color: #ffffff;
+    transition: top .3s ease;
+}
+ul {
+    align-self: center;
+    transform: translateY(50%);
+    margin: auto;
+    width: 80%;
+    justify-content: center;
+    flex-grow: 1;
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+li{
+    display: inline-block;
+    flex-grow:1;
+
+}
+
+a {
+    transition: all .2s;
+}
+
+    li a {
+        color: #400515;
+        font-size: 1.15rem;
+        font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+        font-weight: 800;
+        text-align:center;
+        text-decoration: none;
+        text-transform: capitalize;
+        display: block;
+        letter-spacing: 0.06rem;
+        padding-bottom: 4px;
+        -webkit-font-smoothing: antialiased !important;
+        cursor:pointer;
+    }
+
+    li a:hover{
+        color:#600515;
+    }
+
+    li a:hover:after{
+        color:#600515;
+        transition:ease-in-out;
+        text-decoration:none;
+        width:1.5rem;
+        background-color:#800515;
+
+
+    }
+
+li a:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    margin-top: 4px;
+    background: transparent;
+    transition: width .3s ease, background-color .3s ease;
+}
+
+.container {
+    overflow-x: hidden;
+    z-index: 1;
+    position: fixed;
+    justify-content: center;
+    align-content: center;
+    top: 10%;
+    transition: top .3s ease;
+    width: 100vw;
+    height: 100vh;
+}
+
+.backgroundImage {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(http://wisma.us/wp-content/uploads/2017/12/1513850904_maxresdefault.jpg);
+}
+
+.mainDescription {
+    padding-top: 50px;
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    background-color: rgba(18,11,2, 0.75) !important;
+}
+.mainDescription2 {
+    margin: 0 auto;
+   
+    color: #dddddd;
+}
+.SecondryDescription {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'Oswald', sans-serif ;
+    padding-top: 50px;
+    width: 100%;
+    height: 25%;
+    background-color: #ffffff;
+}
+    .SecondryDescription  h1 {
+        font-family: 'Oswald', sans-serif;
+    }
+
+.pictureSection {
+   
+    margin: 0 auto; 
+   width: 100%;
+    height: 50%;
+    background-color: red;
+    display:inline-flex;
+}
+
+.bigPicture {
+    background-color: blue;
+    width: 50%;
+    height: 100%;
+}
+
+
+.smallPictureRow{
+    width:100%;
+    height:33%;
+    display:flex;
+}
+
+.smallPictures {
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    display: inline;
+}
+
+.smallPicture {
+    border: 1px solid white;
+    background-color: green;
+    height:100%;
+    flex-grow:1;
+
+
+}
+
+.topZero {
+    top: 0 !important;
+}
+
+.topSeven {
+    top: 7% !important;
+}
+
+em {
+    font-size: 22px;
+    line-height: 2;
+    margin-top: 0%;
+}
+
+.FadeInAnimation {
+    animation: fadein 0.5s;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards; /* FF 5+ */
+    -o-animation-fill-mode: forwards; /* Not implemented yet */
+    -ms-animation-fill-mode: forwards; /* IE 10+ */
+    animation-fill-mode: forwards; /* When the spec is finished */
+    animation-iteration-count: 1;
+}
+
+.SlideDownAnimation {
+    animation-name: slide-down,fade-in;
+    animation-duration: 1s,3s;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards; /* FF 5+ */
+    -o-animation-fill-mode: forwards; /* Not implemented yet */
+    -ms-animation-fill-mode: forwards; /* IE 10+ */
+    animation-fill-mode: forwards; /* When the spec is finished */
+}
+
+.SlideLeftAnimation {
+    animation-name: slide-left,fade-in;
+    animation-duration: 1s,1s;
+    -webkit-animation-fill-mode: forwards; /* Chrome 16+, Safari 4+ */
+    -moz-animation-fill-mode: forwards; /* FF 5+ */
+    -o-animation-fill-mode: forwards; /* Not implemented yet */
+    -ms-animation-fill-mode: forwards; /* IE 10+ */
+    animation-fill-mode: forwards; /* When the spec is finished */
+}
+
+
+
+@keyframes slide-left {
+    from {
+        margin-left: -100%;
+      
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+
+@keyframes slide-down {
+    from {
+        margin-top: -10%;
+        height: 300%;
+    }
+
+    to {
+        margin-top: 0%;
+        height: 100%;
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.contactUsFooterText{
+    margin-top:50px;
+    display:flex;
+   justify-content:center;
+    height:100%;
+    width:50%;
+
+}
+.contactUsFooterTextInside {
+
+    
+    text-align: center;
+    color: #660515;
+    height: 50%;
+    width: 70%;
+} 
+.contactUsFooterInputs {
+    height: 100%;
+    width: 50%;
+ 
+}
+
+.footer {
+    
+    display:inline-flex;
+    height: 1000px;
+    width: 100%;
+ 
+}
+
+form {
+    display: table;
+    margin: 40px 40px;
+}
+
+    form label {
+        position: relative;
+        display: block;
+    }
+
+        form label input {
+            font: 18px Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+            display: block;
+            border: none;
+            padding: 20px;
+            width: 700px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            outline: none;
+            transition: all 0.2s ease-in-out;
+        }
+
+            form label input::placeholder {
+                transition: all 0.2s ease-in-out;
+                color: #999;
+                font: 18px Helvetica, Arial, sans-serif;
+            }
+
+            form label input:focus, form label input.populated {
+                padding-top: 28px;
+                padding-bottom: 12px;
+            }
+
+                form label input:focus::placeholder, form label input.populated::placeholder {
+                    color: transparent;
+                }
+
+                form label input:focus + span, form label input.populated + span {
+                    opacity: 1;
+                    top: 10px;
+                }
+
+        form label span {
+            color: #600515;
+            font: 13px Helvetica, Arial, sans-serif;
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            opacity: 0;
+            transition: all 0.2s ease-in-out;
+        }
+
+    form input[type="submit"] {
+
+        transition: all 0.2s ease-in-out;
+        font: 18px Helvetica, Arial, sans-serif;
+        border: none;
+        background: #600515;
+        color: #fff;
+        padding: 16px 40px;
+    }
+
+        form input[type="submit"]:hover {
+            background: #fff;
+            border: 1px solid #600515;
+            color: #600515;
+            cursor:pointer;
+        }
