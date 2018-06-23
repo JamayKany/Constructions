@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="App.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Oswald|Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    
+</head>
+<body class="backgroundImage ">
+    <script>
+
+        $(document).ready(function () {
+     
+        
+        $(".container").scroll(function () {
+                 if ($(this).scrollTop() > 10) {
+                     console.log($(".container").scrollTop());
+                        $('.contactUsHeader').slideUp(200);
+                        $(".navbar").addClass("topZero");
+                        $(".container").addClass("topZero");
+                        
+         
+                    } else {
+                      
+                        $('.contactUsHeader').slideDown(200);
+                        $(".navbar").removeClass("topZero");
+                        $(".container").removeClass("topZero");
+              
+            }
+                 if ($(this).scrollTop() > 400)
+                 {
+                 
+                     $("#slideLeftH1").addClass("SlideLeftAnimation");
+                     $("#slideLeftH2").addClass("SlideLeftAnimation");
+                     $("#slideLeftEM1").addClass("SlideLeftAnimation");
+                     $("#slideLeftEM2").addClass("SlideLeftAnimation");
+                 }
+            });
+
+     
+   
+        })
+
+        $(function () {
+            $('input').on('change', function () {
+                var input = $(this);
+                if (input.val().length) {
+                    input.addClass('populated');
+                } else {
+                    input.removeClass('populated');
+                }
+            });
+
+        });
+
+        $("#contactUs").click(function () {
+            alert("Aaaaaaaaaaaa")
+            var $target = $('.container');
+            $target.animate({ scrollTop: $target.height() }, 500);
+        })
+
+     
+    </script>
+
+    <style>
+
+
+    </style>
+    <div class="contactUsHeader">
+        <div class="contactUsHeaderContent">
+            <div class="contactUsHeaderFontAwesome">
+
+                <i class="fa fa-facebook">
+
+                </i>
+                <i class="fa fa-envelope">
+
+                </i>
+                <i class=" fa fa-twitter">
+
+                </i>
+            </div>
+            <div class="mail">
+                <a>Mail:Example@Example.com</a>
+            </div>
+
+        </div>
+    </div>
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a>Home</a>
+                </li>
+                <li>
+                    <a>About Us</a>
+                </li>
+                <li>
+                    <a>Our Proccess</a>
+                </li>
+                <li>
+                    <a>[Insert Company Logo]</a>
+                </li>
+                <li>
+                    <a>Our Gallery</a>
+                </li>
+                <li>
+                    <a>Spotlight</a>
+                </li>
+                <li>
+                    <a id="contactUs">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    <div class="container">
+        <div class=" mainDescription">
+            <div class="mainDescription2 " >
+                <h1>Construction & Remodel is Our Profession </h1>
+                <p class="SlideDownAnimation FadeInAnimation" style="margin-top:0;">
+                    <em >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        <br />
+                        incididunt ut labore et dolore magna aliqua.
+                    </em>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="SecondryDescription">
+         
+                <h1>HTML Ipsum Presents</h1>
+
+                <p class="SlideDownAnimation FadeInAnimation" style="animation-delay:1s; opacity:0"><strong>Pellentesque habitant morbi tristique</strong> 
+                senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+                tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em>
+                Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed,
+                <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci,
+                sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+        
+        </div>
+
+
+        <div class="pictureSection">
+            <div class="bigPicture">
+
+            </div>
+            <div class="smallPictures">
+                <div class="smallPictureRow">
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                </div>
+                <div class="smallPictureRow">
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                </div>
+                <div class="smallPictureRow">
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                    <div class="smallPicture">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="contactUsFooterText">
+                <div class="contactUsFooterTextInside">
+                    <h1 id="slideLeftH1" style="opacity:0" >
+                        Contact Us
+                    </h1>
+                    <h2 id="slideLeftH2" style="opacity:0;animation-delay:.5s">
+                        We will respond immediately to your call!
+                    </h2>
+                    <p >
+                        <em id="slideLeftEM1" style="opacity:0;animation-delay:1s;">
+                            Whether it's a kitchen remodeling, bathroom remodeling,
+                        </em>
+                        <br />
+                        <em id="slideLeftEM2"style="opacity:0;animation-delay:1s;">
+                            a room addition we are here to make you acomplish your dream house.
+                        </em>
+                        
+
+                    </p>
+                </div>
+            </div>
+            <div class="contactUsFooterInputs">
+                <form>
+                    <label>
+                        <input id="fname" type="text" placeholder="Name">
+                        <span>Name</span>
+                    </label>
+
+                    <label>
+                        <input type="email" placeholder="Email">
+                        <span>Email</span>
+                    </label>
+                    <label>
+                        <input id="Phone" type="text" placeholder="Phone">
+                        <span>Phone</span>
+                    </label>
+
+                    <label>
+                        <input id="Address" type="text" placeholder="Address">
+                        <span>Address</span>
+                    </label>
+                    <label>
+                        <input id="City" type="text" placeholder="City">
+                        <span>City</span>
+                    </label>
+
+                    <label>
+                        <input id="Zip"type="text" placeholder="Zip">
+                        <span>Zip</span>
+                    </label>
+
+                    <label>
+                        <input id="AboutYourProject" type="text" placeholder="About Your Project">
+                        <span>About Your Project</span>
+                    </label>
+
+                    <div style="width:100%; display:flex; justify-content:center">
+                        <input type="submit" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        </div>
+
+  
+
+   
+
+</body>
+</html>
